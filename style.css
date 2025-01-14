@@ -39,9 +39,11 @@ body {
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
     padding: 16px;
-    width: 700px;
+    max-width: 750px; /* Ensures it doesn't exceed this size */
+    width: 100%; /* Allows it to shrink on smaller screens */
     text-align: center;
-  }
+    box-sizing: border-box; /* Ensures padding and borders are included in the width */
+}
   
   .body {
     flex: 1;
@@ -66,12 +68,22 @@ body {
 
 
   
-  .container {
+.container {
     padding: 48px;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
     justify-content: space-between;
-  }
+    max-width: 1200px; /* Restricts the container's maximum width */
+    margin: 0 auto; /* Centers the container */
+    width: 100%; /* Ensures it adapts to the screen */
+    box-sizing: border-box; /* Ensures padding doesn't exceed width */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
   
   
