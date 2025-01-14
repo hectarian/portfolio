@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hector's Portfolio</title>
+    <title>Hector's Project</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Add script to the <head> of your page to load the embeddable map component -->
+<script type="module" src="https://js.arcgis.com/embeddable-components/4.31/arcgis-embeddable-components.esm.js"></script>
 </head>
 <body>
     <div class="header">
@@ -12,21 +14,23 @@
     </div>
     <div class="body">
         <div class="sidebar">
-          <ul>
-            <li><a href="#">⭐ - Resume</a></li>
-            <li><a href="#">🦸🏽‍♂️ - link two</a></li>
-            <li><a href="#">🖌️ - link three</a></li>
-          </ul>
+            <ul>
+                <li><a>SJPD Data Project</a></li>
+                <li><a href="https://github.com/hectarian">My Github Profile</a></li>
+
+            </ul>
         </div>
         <div class="container">
-          <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eveniet? Dolorem dignissimos maiores non delectus possimus dolor nulla repudiandae vitae provident quae, obcaecati ipsam unde impedit corrupti veritatis minima porro?</div>
-          <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quaerat qui iure ipsam maiores velit tempora, deleniti nesciunt fuga suscipit alias vero rem, corporis officia totam saepe excepturi odit ea.</div>
-          <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil impedit eius amet adipisci dolorum vel nostrum sit excepturi corporis tenetur cum, dolore incidunt blanditiis. Unde earum minima laboriosam eos!</div>
+            <div class="card"><h2>A Heat map of Police Calls in San Jose</h2>
+                <p style="color:DodgerBlue;">The details of this project can be found <a href="https://github.com/hectarian/sanjose-police-project">here</a></p>
+                <arcgis-embedded-map style="height:400px;width:700px;" item-id="19bfe7cda5514ae3bfc6b4888ca34973" theme="light" portal-url="https://osugisci.maps.arcgis.com" heading-enabled ></arcgis-embedded-map>
+
+            </div>            
         </div>
-      </div>
-      <div class="footer">
+    </div>
+    <div class="footer">
         Thanks for visiting
-      </div>
+    </div>
     
 </body>
 </html>
